@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/tvWord"
-            android:layout_width="189dp"
+            android:layout_width="wrap_content"
             android:layout_height="44dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
@@ -50,23 +50,24 @@
             android:id="@+id/ivTalk"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
             android:paddingEnd="5dp"
             android:src="@drawable/speaker"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPhonetic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvPhonetic" />
+            app:layout_constraintStart_toStartOf="@+id/tvWord"
+            app:layout_constraintTop_toBottomOf="@+id/tvWord" />
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/edit_text_back"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/ivTalk"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tvWord"
-            app:layout_constraintTop_toBottomOf="@+id/tvWord">
+            app:layout_constraintTop_toBottomOf="@+id/ivTalk">
 
             <TextView
                 android:id="@+id/textView2"
